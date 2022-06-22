@@ -17,3 +17,11 @@ const flagApp = async (name)=>{
 };
 
 //* FUNCTIONS *//
+
+const renderError = (err)=>{
+    const countries = document.querySelector(".countries");
+    countries.innerHTML += `
+    <h1>There is a problem ${err}</h1>
+    <img src="./img/404.png" alt="">
+    `
+};
