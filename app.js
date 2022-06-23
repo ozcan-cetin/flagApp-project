@@ -25,3 +25,18 @@ const renderError = (err)=>{
     <img src="./img/404.png" alt="">
     `
 };
+
+const renderCountry = (country)=>{
+console.log(country);
+const countries = document.querySelector(".countries");
+
+const {
+    capital,
+    name: { common },
+    region,
+    flags: { svg },
+    languages,
+    currencies,
+  } = country;
+  
+flagApp()
